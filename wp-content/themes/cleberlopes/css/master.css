@@ -1,0 +1,348 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body, nav, header, footer, div, img, button {
+  display: block; }
+
+header, footer {
+  overflow: hidden; }
+
+img {
+  max-width: 100%; }
+
+input {
+  border: 0; }
+
+.md-12 {
+  width: 100%; }
+
+.md-11 {
+  width: 91.66667%; }
+
+.md-10 {
+  width: 83.33333%; }
+
+.md-9 {
+  width: 75%; }
+
+.md-8 {
+  width: 66.66667%; }
+
+.md-7 {
+  width: 58.33333%; }
+
+.md-6 {
+  width: 50%; }
+
+.md-5 {
+  width: 41.66667%; }
+
+.md-4 {
+  width: 33.33333%; }
+
+.md-3 {
+  width: 25%; }
+
+.md-2 {
+  width: 16.66667%; }
+
+.md-1 {
+  width: 8.33333%; }
+
+body {
+  font: normal 300 14px/1.6 "Open Sans", Helvetica, sans-serif; }
+
+input, textarea, select {
+  font: normal normal 1em/1 "Open Sans", Helvetica, sans-serif;
+  color: #151515;
+  border: 1px solid #d7d7d7;
+  padding: 1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease 0;
+  -moz-transition: all 0.3s ease 0;
+  -o-transition: all 0.3s ease 0;
+  transition: all 0.3s ease 0; }
+
+button {
+  border: 0;
+  font: normal 700 1em/1 "Open Sans", Helvetica, sans-serif;
+  padding: 1em;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  button:hover {
+    opacity: 0.85; }
+
+a.button {
+  font: normal 700 1.2em/1.8 "Open Sans", Helvetica, sans-serif;
+  padding: 1em;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  a.button:hover {
+    opacity: 0.85; }
+
+.button {
+  height: 4em;
+  color: #fff;
+  font-size: 1.2em;
+  display: inherit;
+  font-weight: 700; }
+
+.small-button {
+  height: 2em; }
+
+.grey-button {
+  background-color: #464646; }
+
+.blue-button {
+  background-color: #3B7AF9;
+  border: 1px solid #3163C7; }
+
+.green-button {
+  background-color: #20b64e;
+  border: 1px solid #199940; }
+
+.row {
+  display: block;
+  padding: 1em;
+  overflow: hidden; }
+
+.div-central {
+  margin: 0px auto;
+  float: none; }
+
+.right-floated {
+  float: right; }
+
+.left-floated {
+  float: left; }
+
+.nav-menu {
+  list-style: none;
+  font-size: 1.2em; }
+  .nav-menu ul {
+    display: inline-block; }
+
+.horizontal-nav ul li {
+  display: inline-block;
+  margin-left: 1em;
+  line-height: 300%; }
+
+.nav {
+  background: transparent;
+  color: #fff; }
+
+.header {
+  display: table;
+  vertical-align: middle;
+  padding: 3em; }
+
+.logo:hover {
+  opacity: 0.85; }
+
+.footer {
+  background: #fff;
+  color: #1881ff;
+  border-top: 1px solid #1881ff;
+  padding: 1.5em 0; }
+
+.footer-nav {
+  color: inherit;
+  padding: 2em; }
+
+.inner-wrapper {
+  background: transparent url(../img/background-blue.png) no-repeat top center/cover; }
+
+.content {
+  background: #fff; }
+
+.landing {
+  text-align: center;
+  padding: 17vh 0 22vh; }
+
+.landing-interna {
+  padding-bottom: 4vh; }
+
+.landing-heading {
+  font: normal 700 2.5em/1.5 Times, "Times New Roman", serif;
+  color: #fff; }
+
+.landing-subheading {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+  color: #fff; }
+
+.letras-pequenas {
+  font-size: 0.8em;
+  font-weight: 700;
+  margin-top: 0.5em;
+  color: #464646; }
+
+.motivos {
+  padding: 5em 1em;
+  text-align: center; }
+  .motivos .bloco {
+    margin-bottom: 4em; }
+  .motivos :first-child {
+    padding-right: 1em; }
+  .motivos :last-child {
+    padding-left: 1em; }
+  .motivos img {
+    display: inline; }
+  .motivos h2 {
+    color: #1881ff;
+    font-size: 1.2em;
+    line-height: 3; }
+
+.breadcrumbs {
+  margin-top: 0.8em; }
+
+.searchform {
+  overflow: hidden; }
+
+.search-bar {
+  width: 80%;
+  height: 4em;
+  font-size: 1.2em;
+  border-right: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; }
+  .search-bar.on-white {
+    border-color: #d7d7d7; }
+  .search-bar.smaller {
+    width: 70%;
+    font-size: 1em; }
+
+.search-button {
+  width: 20%;
+  height: 4em;
+  font-size: 1.2em;
+  background-color: #464646;
+  border-color: #111111;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; }
+  .search-button.smaller {
+    width: 30%;
+    font-size: 1em; }
+
+.search-bar.smaller, .search-button.smaller {
+  height: 3em; }
+
+.landing-search-bar {
+  width: 80%;
+  height: 4em;
+  font-size: 1.2em;
+  border: 0; }
+
+.landing-submit-button {
+  width: 20%;
+  height: 4em; }
+
+form {
+  display: block;
+  text-align: left; }
+  form label {
+    display: inline-block; }
+  form .label {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #1881ff;
+    padding-left: 1em;
+    margin-top: 3em;
+    margin-bottom: 0.5em; }
+    form .label:first-of-type {
+      margin-top: 0; }
+  form input, form textarea {
+    width: 100%;
+    font-size: 1.2em; }
+  form .submit-area {
+    margin-top: 3em; }
+  form .cancela-form {
+    float: left;
+    display: inline-block;
+    color: #1881ff;
+    font-size: 1em;
+    font-weight: 700; }
+    form .cancela-form::before {
+      content: '';
+      width: 1em;
+      height: 1em;
+      display: inline-block;
+      vertical-align: middle;
+      background: transparent url(../img/cancela-form.png) no-repeat center/cover; }
+  form .error {
+    padding-left: 1em;
+    font-size: .8rem;
+    font-weight: 700;
+    color: red; }
+
+.info-primaria-imovel {
+  display: table;
+  vertical-align: middle;
+  border: 1px solid #d7d7d7; }
+
+.imagem-imovel {
+  min-height: 400px;
+  display: table-cell;
+  vertical-align: middle;
+  background: #eaeaea url(); }
+  .imagem-imovel img {
+    width: 100%;
+    height: auto; }
+
+.chamada-imovel {
+  padding: 1.5em 2em; }
+  .chamada-imovel h1 {
+    font-size: 2em;
+    margin-bottom: .5em; }
+
+.codigo-imovel {
+  font-weight: 700;
+  margin-bottom: 0.5rem; }
+
+.avaliacao-imovel {
+  font-size: 1.2em;
+  margin-bottom: 0.5rem; }
+
+.preco-imovel {
+  font-size: 2em; }
+
+.info-secundaria-imovel {
+  overflow: hidden;
+  padding: 1.5em 0;
+  margin-bottom: 3em; }
+  .info-secundaria-imovel h2 {
+    margin-bottom: .5em; }
+
+.lista-caracteristicas ul {
+  -moz-columns: 3;
+  list-style-type: none; }
+
+.gostei {
+  text-align: center; }
+
+body {
+  font: normal 300 14px/1.6 "Open Sans", Helvetica, sans-serif; }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
+b, strong {
+  font-weight: 700; }
+
+em, italic {
+  font-style: italic; }
+
+/*# sourceMappingURL=master.css.map */

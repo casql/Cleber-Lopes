@@ -1,0 +1,25 @@
+// 1 Importa os  resets do projeto
+@import "reset.scss";
+
+// 2 Importa as fontes de Google Fonts
+@import "fonts.scss";
+
+// 3 Importa as variáveis do projeto
+@import "variables.scss";
+
+// 4 Importa as mixins do projeto
+@import "mixins.scss";
+
+// 5 Importa os overrides de estilos do wordpress
+@import "wordpress.scss";
+
+// 6 Importa a folha de estilos que define a colunação
+@import "columns.scss";
+
+// 7 Importa a folha de estilos básica
+@import "basic.scss";
+
+// 8 Importa a folha de estilos tipográficos
+@import "typography.scss";
+
+// Aqui termina a folha de estilos

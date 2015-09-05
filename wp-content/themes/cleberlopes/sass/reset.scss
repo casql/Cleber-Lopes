@@ -1,0 +1,12 @@
+// Folha de estilos com resets do projeto
+
+* {margin:0; padding:0; box-sizing:border-box;}
+
+body, nav, header, footer, div, img, button{display: block;}
+header, footer {overflow:hidden;}
+
+img {max-width:100%}
+
+input{
+  border:0;
+}

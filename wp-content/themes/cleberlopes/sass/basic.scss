@@ -1,0 +1,339 @@
+// Folha de estilos básica do projeto
+// Esta folha contém os principais estilos de normalização
+// de elementos recorrentes ao longo do projeto,
+// em especial elementos estruturais.
+body {font: normal 300 14px/1.6 $sans-serif}
+
+input, textarea, select {
+  font: normal normal 1em/1 $sans-serif;
+  color:$preto;
+  border: 1px solid $cinza-claro;
+  padding:1em;
+
+  @include border-radius(5px);
+  @include transition(all, 0.3s, ease, 0);
+}
+
+button {
+  border:0;
+  font: normal 700 1em/1 $sans-serif;
+  padding: 1em;
+  cursor: pointer;
+
+  @include border-radius(5px);
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+a.button {
+  font: normal 700 1.2em/1.8 $sans-serif;
+  padding:1em;
+  display: inline-block;
+
+  @include border-radius(5px);
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.button {
+  height:4em;
+  color:$branco;
+  font-size: 1.2em;
+  display: inherit;
+  font-weight: 700;
+}
+
+.small-button {height:2em;}
+
+.grey-button {
+  background-color:$cinza-escuro;
+}
+
+.blue-button {
+  background-color:$button-azul;
+  border: 1px solid $button-azul-escuro;
+}
+
+.green-button{
+  background-color: $button-verde;
+  border: 1px solid $button-verde-escuro;
+}
+
+
+.row {display: block;padding: 1em; overflow: hidden;}
+
+// centraliza e flutua divs
+.div-central{margin:0px auto;float:none;}
+.right-floated {float:right}
+.left-floated {float:left;}
+
+// Estilos de navegação
+.nav-menu {
+  list-style: none;
+  font-size: 1.2em;
+
+  ul{
+    display: inline-block;
+  }
+}
+
+.horizontal-nav {
+  ul {
+    li {
+      display: inline-block;
+      margin-left:1em;
+      line-height: 300%;
+    }
+  }
+}
+
+// Estlos específicos de nav
+.nav {
+  background: transparent;
+  color: $branco;
+}
+
+// Estilo do header
+.header {
+  display: table;
+  vertical-align: middle;
+  padding:3em;
+}
+
+
+.logo {
+  &:hover {
+    opacity:0.85;
+  }
+}
+// Estilos específicos de footer
+.footer {
+  background: $branco;
+  color: $brand-azul;
+  border-top:1px solid $brand-azul;
+  padding: 1.5em 0;
+}
+
+.footer-nav {
+  color:inherit;
+  padding:2em;
+}
+
+.inner-wrapper{
+  background: transparent url(../img/background-blue.png) no-repeat top center / cover;
+}
+
+.content {
+  background: $branco;
+}
+
+// Estilos para a home page e páginas internas que seguem o mesmo modelo
+.landing {
+  text-align: center;
+  padding: 17vh 0 22vh;
+}
+
+.landing-interna {
+  padding-bottom: 4vh;
+}
+
+.landing-heading {
+  font: normal 700 2.5em/1.5 $serif;
+  color: $branco;
+}
+
+.landing-subheading {
+  font-size:1.2em;
+  margin-bottom: 1.2em;
+  color:$branco;
+}
+
+.letras-pequenas {
+  font-size:0.8em;
+  font-weight: 700;
+  margin-top:0.5em;
+  color: $cinza-escuro;
+}
+
+// Espaço da home page com motivos para comprar com Cleber Lopes
+.motivos {
+  padding:5em 1em;
+  text-align:center;
+
+  .bloco {margin-bottom:4em}
+
+  :first-child {padding-right:1em;}
+  :last-child {padding-left:1em;}
+
+  img {display: inline;}
+  h2 {color:$brand-azul; font-size: 1.2em;line-height: 3;}
+}
+
+// Estilos da navegação secundária que compreende breadcrumbs e searchform
+.breadcrumbs {
+  margin-top:0.8em;
+}
+
+// Estilos do elemento searchform
+.searchform{
+  overflow:hidden;
+}
+
+.search-bar {
+  width:80%; // Pode ser sobrescrito com a classe .small
+  height:4em;
+  font-size:1.2em;
+
+  border-right:0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  &.on-white{border-color:$cinza-claro}
+  &.smaller{
+    width:70%;
+    font-size:1em;
+  }
+}
+.search-button{
+  width:20%;
+  height:4em;
+  font-size: 1.2em;
+
+  background-color: $cinza-escuro;
+  border-color: #111111;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+
+  &.smaller{
+    width:30%;
+    font-size:1em;
+  }
+}
+
+.search-bar, .search-button{
+  &.smaller{
+    height:3em;
+  }
+}
+
+// Final dos estilos de seachform
+
+.landing-search-bar {
+  width:80%;
+  height:4em;
+  font-size:1.2em;
+  border:0
+}
+
+.landing-submit-button {
+  width:20%;
+  height:4em;
+}
+
+// Estilos para os forms de páginas internas, como o cadastro de imóveis e contato
+form{
+  display: block;
+  text-align:left;
+
+  label {
+    display: inline-block;
+  }
+
+  .label {
+    font-size:1.2em;
+    font-weight: 700;
+    color: $brand-azul;
+    padding-left: 1em;
+    margin-top:3em;
+    margin-bottom: 0.5em;
+
+    &:first-of-type{
+      margin-top:0;
+    }
+  }
+
+  input, textarea {width:100%; font-size: 1.2em;}
+
+  .submit-area{
+    margin-top:3em;
+  }
+
+  .cancela-form {
+    float:left;
+    display: inline-block;
+    color:$brand-azul;
+    font-size:1em;
+    font-weight: 700;
+
+    &::before {
+      content:'';
+      width:1em;
+      height:1em;
+      display: inline-block;
+      vertical-align: middle;
+      background: transparent url(../img/cancela-form.png) no-repeat center / cover;
+    }
+  }
+
+  .error {
+    padding-left: 1em;
+    font-size:.8rem;
+    font-weight: 700;
+    color:red;
+  }
+}
+
+
+// Estilos da página interna de imóvel (single-imovel.php)
+
+// Seção superior com imagem e chamada
+.info-primaria-imovel {
+  display: table;
+  vertical-align: middle;
+  border: 1px solid $cinza-claro;
+}
+.imagem-imovel {
+  min-height:400px;
+  display: table-cell;
+  vertical-align: middle;
+  background: #eaeaea url();
+
+  img {
+    width:100%;
+    height:auto;
+  }
+}
+.chamada-imovel {
+  padding:1.5em 2em;
+
+  h1 {font-size:2em;margin-bottom:.5em;}
+}
+
+.codigo-imovel {font-weight: 700; margin-bottom: 0.5rem;}
+.avaliacao-imovel {font-size:1.2em;margin-bottom:0.5rem}
+.preco-imovel {font-size:2em}
+
+// Seção de características secundárias
+.info-secundaria-imovel {
+  overflow: hidden;
+  padding: 1.5em 0;
+  margin-bottom:3em;
+
+  h2 {margin-bottom:.5em;}
+}
+
+.lista-caracteristicas {
+   ul {
+     -moz-columns: 3;
+     list-style-type:none;
+   }
+}
+
+// Bloco "Gostei", que permite enviar uma mensagem
+.gostei {
+  text-align:center;
+}

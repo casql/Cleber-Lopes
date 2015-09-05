@@ -1,0 +1,25 @@
+// Folha de estilos que centraliza as mixins
+
+// Mixin para criar colunas
+$total-width: 100%;
+$grid-columns: 12;
+$cols: 12 !default;
+$col-width: ($total-width / $grid-columns);
+
+@mixin colunas($cols) {
+  width: $col-width * $cols;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($what, $time, $ease, $delay) {
+  -webkit-transition: $what $time $ease $delay;
+  -moz-transition: $what $time $ease $delay;
+  -o-transition: $what $time $ease $delay;
+  transition: $what $time $ease $delay;
+}
