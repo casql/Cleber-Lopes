@@ -138,6 +138,8 @@ a.button {
   display: inline-block;
   margin-left: 1em;
   line-height: 300%; }
+  .horizontal-nav ul li a:hover {
+    text-decoration: underline; }
 
 .nav {
   background: transparent;

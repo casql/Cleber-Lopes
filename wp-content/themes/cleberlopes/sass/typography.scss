@@ -7,6 +7,9 @@ p {}
 a {
   color:inherit;
   text-decoration: inherit;
+
+  &:hover{
+  }
 }
 
 b, strong {font-weight: 700;}

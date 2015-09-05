@@ -87,6 +87,12 @@ a.button {
       display: inline-block;
       margin-left:1em;
       line-height: 300%;
+
+      a {
+          &:hover{
+            text-decoration:underline;
+          }
+      }
     }
   }
 }
@@ -121,7 +127,8 @@ a.button {
 .footer-nav {
   color:inherit;
   padding:2em;
-}
+
+  }
 
 .inner-wrapper{
   background: transparent url(../img/background-blue.png) no-repeat top center / cover;
