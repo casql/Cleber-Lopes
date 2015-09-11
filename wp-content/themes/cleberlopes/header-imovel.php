@@ -4,6 +4,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/flexslider/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/flexslider/jquery.flexslider.js"></script>
+
+    <!-- Flexslider INIT -->
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation:"slide",
+        });
+      });
+    </script>
+
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/master.css" media="screen" title="Stylesheet" charset="utf-8">
   </head>
   <body>

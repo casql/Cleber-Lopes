@@ -40,14 +40,18 @@ a.button {
 }
 
 .button {
-  height:4em;
+  display: block;
   color:$branco;
   font-size: 1.2em;
   display: inherit;
   font-weight: 700;
 }
 
-.small-button {height:2em;}
+.smaller-button {
+  padding: 1em 2em !important;
+  font-size:1em !important;
+  line-height: 1 !important;
+}
 
 .grey-button {
   background-color:$cinza-escuro;
@@ -343,4 +347,60 @@ form{
 // Bloco "Gostei", que permite enviar uma mensagem
 .gostei {
   text-align:center;
+}
+
+
+// Estilos referentes às páginas de resultados, bem como à pagina de imóveis à venda.
+// Referem-se aos estilos apresentados na página search.php
+
+.resultados {
+  display: block;
+
+  .item-resultados {
+    padding:.5em;
+    background-color: $cinza-clarissimo;
+    border: 1px solid $cinza-claro;
+
+    img {border:1px solid $cinza-claro}
+    h1 {font-size: 1.3em; line-height:1.5; margin:0 0;}
+    .meta {}
+    .sep {margin: .8em 0 .8em; display: block; width:2em; height:1px;background: $preto;}
+    .preco {font-size:1.6em;}
+
+    .mais-informacoes {
+      display: block;
+      text-align:center;
+      margin: 1em auto;
+
+      .button {
+        display: inline-block;
+
+      }
+    }
+  }
+}
+
+.paginacao {
+  width:100%;
+  display: inline-block;
+  text-align:center;
+
+  margin: 1em 0;
+
+  ul {
+    li {
+      display: inline;
+      padding: 1em;
+      color: $brand-azul;
+      border: 1px solid $brand-azul;
+
+      @include transition(all, 0.3s, ease, 0s);
+
+      // Estilos dos números de paginação em hover
+      &:hover {
+        background-color: $brand-azul;
+        color: $branco;
+      }
+    }
+  }
 }

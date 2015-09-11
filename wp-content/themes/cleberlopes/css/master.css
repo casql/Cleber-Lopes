@@ -93,14 +93,16 @@ a.button {
     opacity: 0.85; }
 
 .button {
-  height: 4em;
+  display: block;
   color: #fff;
   font-size: 1.2em;
   display: inherit;
   font-weight: 700; }
 
-.small-button {
-  height: 2em; }
+.smaller-button {
+  padding: 1em 2em !important;
+  font-size: 1em !important;
+  line-height: 1 !important; }
 
 .grey-button {
   background-color: #464646; }
@@ -334,6 +336,51 @@ form {
 .gostei {
   text-align: center; }
 
+.resultados {
+  display: block; }
+  .resultados .item-resultados {
+    padding: .5em;
+    background-color: #f8f8f8;
+    border: 1px solid #d7d7d7; }
+    .resultados .item-resultados img {
+      border: 1px solid #d7d7d7; }
+    .resultados .item-resultados h1 {
+      font-size: 1.3em;
+      line-height: 1.5;
+      margin: 0 0; }
+    .resultados .item-resultados .sep {
+      margin: .8em 0 .8em;
+      display: block;
+      width: 2em;
+      height: 1px;
+      background: #151515; }
+    .resultados .item-resultados .preco {
+      font-size: 1.6em; }
+    .resultados .item-resultados .mais-informacoes {
+      display: block;
+      text-align: center;
+      margin: 1em auto; }
+      .resultados .item-resultados .mais-informacoes .button {
+        display: inline-block; }
+
+.paginacao {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 1em 0; }
+  .paginacao ul li {
+    display: inline;
+    padding: 1em;
+    color: #1881ff;
+    border: 1px solid #1881ff;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+    .paginacao ul li:hover {
+      background-color: #1881ff;
+      color: #fff; }
+
 body {
   font: normal 300 14px/1.6 "Open Sans", Helvetica, sans-serif; }
 
@@ -346,5 +393,20 @@ b, strong {
 
 em, italic {
   font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  line-height: 2;
+  margin-bottom: .5em; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 1em 0; }
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1.2;
+  margin: 1em 0 .5em; }
 
 /*# sourceMappingURL=master.css.map */

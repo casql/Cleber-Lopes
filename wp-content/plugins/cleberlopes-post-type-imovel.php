@@ -16,7 +16,7 @@
 	  'description' => 'Cadastro de imóveis no sistema.',
 	  'public' => true,
 	  'menu_position' => 3,
-	  'supports' => array( 'title', 'editor', 'custom-fields' ),
+	  'supports' => array( 'title', 'editor', 'custom-fields', 'thumbnail', 'gallery' ),
 		'rewrite' => array('slug' => 'imoveis'),
 	));
 	}

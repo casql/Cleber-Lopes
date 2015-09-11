@@ -9,17 +9,24 @@
           </div> <!-- .row breadcrumbs e campo de pesquisa -->
         </div>
 
+        <?php // Começa o loop principal
+        if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+
+
         <article class="row md-10 div-central">
           <div class="info-primaria-imovel">
-            <div class="imagem-imovel md-7">
-              <img src="img/imovel-placeholder.png" alt="Casa no Laranjal" />
+            <div class="imagem-imovel flexslider md-7">
+              <ul class="slides">
+                <?php retorna_lista_de_imagens();?>
+              </ul>
             </div> <!-- .imagem-imovel -->
             <div class="chamada-imovel ">
-              <h1>Casa no Laranjal</h1>
+              <h1><?php the_title(); ?></h1>
               <p class="codigo-imovel">Código do imóvel: CLA968</p>
-              <p class="avaliacao-imovel">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.
-              </p>
+              <div class="avaliacao-imovel">
+                <?php the_excerpt();?>
+              </div>
               <p class="preco-imovel">R$370.000,00</p>
             </div> <!-- .chamada-imovel -->
           </div> <!-- .info-primaria-imovel -->
@@ -46,6 +53,10 @@
             <h2>Gostou? Entre em contato!</h2>
             <button class="md-6 button blue-button div-central" type="button" name="button">Gostei!</button>
           </div>
+
+        <?php endwhile; else : ?>
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
       </article>
 
 <?php get_footer(); ?>
